@@ -47,7 +47,7 @@ AWS_USER_ID= XXXXXXXXXXXXXXXXX
 # KEY_LOCATION=/home/myuser/.ssh/id_rsa-gsg-keypair
 
 [key anacondakey]
-KEY_LOCATION=~/.ssh/anacondakey
+KEY_LOCATION=~/.ssh/anacondakey.rsa
 
 
 # You can of course have multiple keypair sections
@@ -79,7 +79,8 @@ CLUSTER_SHELL = bash
 
 # Anaconda Image
 NODE_IMAGE_ID = ami-39298750
-#ami-39298750 anaconda
+NODE_IMAGE_ID = ami-63bb2c0a    # AMI US-EAST-1 (Anaconda 1.3)
+NODE_IMAGE_ID = ami-a4d64194    # AMI US-WEST-2 (Anaconda 1.4)
 
 # instance type for all cluster nodes
 # (options: cg1.4xlarge, c1.xlarge, m1.small, c1.medium, m2.xlarge, t1.micro, cc1.4xlarge, m1.medium, cc2.8xlarge, m1.large, m1.xlarge, m2.4xlarge, m2.2xlarge)
